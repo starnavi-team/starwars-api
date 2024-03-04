@@ -1,6 +1,6 @@
 #!/bin/sh
 
-while !</dev/tcp/swapi_db/5432;
+while !</dev/tcp/${POSTGRES_HOST}/${POSTGRES_PORT};
 do
     echo waiting for Postgres to start...;
     sleep 3;
