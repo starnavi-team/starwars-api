@@ -1,5 +1,4 @@
 import os
-import dj_database_url
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -129,7 +128,7 @@ REST_FRAMEWORK = {
 # Cors
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_URLS_REGEX = r'^/api/.*$'
+CORS_URLS_REGEX = r'^/.*$'
 CORS_ALLOW_METHODS = (
         'GET',
     )
