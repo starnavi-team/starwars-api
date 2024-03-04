@@ -120,7 +120,7 @@ The API supports advanced filtering options that allow precise data retrieval. F
         /planets/?climate=arid&population__gt=100000
 
         /starships/?films__in=1,4&pilots__homeworld__name__iexact=naboo
-- 
+
 **Attributes:**
 
 - ```climate``` *string*
@@ -137,46 +137,19 @@ The API supports advanced filtering options that allow precise data retrieval. F
 
 Filters can be combined in a single request to narrow down the filter results efficiently. Ensure query parameters are correctly encoded to avoid errors.
 
+
+<a name="root"></a>
 #Resources
 - - -
 
-<a name="root"></a>
-###Root
+There are such resources within the API.
 
-The Root resource provides information on all available resources within the API.
-
-**Example request:**
-
-    http https://sw-api.starnavi.io/
-
-**Example response:**
-
-    HTTP/1.0 200 OK
-    Content-Type: application/json
-    {
-        "films": "https://sw-api.starnavi.io/films/",
-        "people": "https://sw-api.starnavi.io/people/",
-        "planets": "https://sw-api.starnavi.io/planets/",
-        "species": "https://sw-api.starnavi.io/species/",
-        "starships": "https://sw-api.starnavi.io/starships/",
-        "vehicles": "https://sw-api.starnavi.io/vehicles/"
-    }
-
-**Attributes:**
-
-- ```films``` *string*
--- The URL root for Film resources
-- ```people``` *string*
--- The URL root for People resources
-- ```planets``` *string*
--- The URL root for Planet resources
-- ```species``` *string*
--- The URL root for Species resources
-- ```starships``` *string*
--- The URL root for Starships resources
-- ```vehicles``` *string*
--- The URL root for Vehicles resources
-
+      "films": "https://sw-api.starnavi.io/films/",
+      "people": "https://sw-api.starnavi.io/people/",
+      "planets": "https://sw-api.starnavi.io/planets/",
+      "species": "https://sw-api.starnavi.io/species/",
+      "starships": "https://sw-api.starnavi.io/starships/",
+      "vehicles": "https://sw-api.starnavi.io/vehicles/"
 
 - - -
 <a name="people"></a>

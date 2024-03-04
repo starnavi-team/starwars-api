@@ -1,10 +1,7 @@
 from __future__ import unicode_literals
 
-from django.shortcuts import render_to_response, redirect
-from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import render_to_response
 from django.core.cache import cache
-from django.conf import settings
-from django.contrib.auth.decorators import login_required
 
 from resources.utils import get_resource_stats
 

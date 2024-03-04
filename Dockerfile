@@ -6,4 +6,4 @@ WORKDIR /code
 COPY . /code/
 VOLUME /code
 RUN pip install -r requirements.txt
-CMD ["sh", "-c", "./run.sh"]
+RUN chmod +x ./run.sh
