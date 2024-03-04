@@ -9,6 +9,7 @@ services:
     entrypoint: [ "bash", "run.sh" ]
     volumes:
       - ./:/code/
+      - static_volume:/code/staticfiles
     ports:
       - "8000:8000"
     depends_on:
@@ -33,4 +34,4 @@ networks:
     name: swapi
 
 volumes:
-  db_data:
+  static_volume:
