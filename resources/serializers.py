@@ -17,6 +17,7 @@ class PeopleSerializer(serializers.ModelSerializer):
     class Meta:
         model = People
         fields = (
+            "id",
             "name",
             "height",
             "mass",
@@ -41,6 +42,7 @@ class PlanetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Planet
         fields = (
+            "id",
             "name",
             "rotation_period",
             "orbital_period",
@@ -63,12 +65,13 @@ class FilmSerializer(serializers.ModelSerializer):
     class Meta:
         model = Film
         fields = (
+            "id",
             "title",
             "episode_id",
             "opening_crawl",
             "director",
             "producer",
-	    "release_date",
+	        "release_date",
             "characters",
             "planets",
             "starships",
@@ -85,6 +88,7 @@ class SpeciesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Species
         fields = (
+            "id",
             "name",
             "classification",
             "designation",
@@ -108,6 +112,7 @@ class VehicleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Vehicle
         fields = (
+            "id",
             "name",
             "model",
             "manufacturer",
@@ -132,6 +137,7 @@ class StarshipSerializer(serializers.ModelSerializer):
     class Meta:
         model = Starship
         fields = (
+            "id",
             "name",
             "model",
             "manufacturer",
